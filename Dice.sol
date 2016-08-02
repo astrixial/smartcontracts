@@ -1,5 +1,4 @@
-// Ethereum + Solidity
-// This code sample & more @ dev
+// A dice
 
 
 contract Dice{
@@ -8,9 +7,9 @@ contract Dice{
   function __callback(bytes32 myid, string// Ethereum + Solidity
 
 
-import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
+*import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
 
-contract SimpleDice is usingOraclize {
+contract Dice is usingOraclize {
   mapping (bytes32 => address) bets;
     
   function __callback(bytes32 myid, string result) {
