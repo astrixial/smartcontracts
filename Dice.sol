@@ -1,4 +1,4 @@
-// A dice
+// A dice that work with oraclizeAPi.sol 
 
 
 contract Dice{
