@@ -4,7 +4,7 @@
 contract Dice{
   mapping (bytes32 => address) bets;
     
-  function __callback(bytes32 myid, string// Ethereum + Solidity
+  function __callback(bytes32 myid, string
 
 
 *import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
