@@ -1,3 +1,5 @@
+// the contributions of the channel , inline assembly wiil be good on the future
+
 contract Owned {
     event OwnerChanged(address newOwner);
     address public owner;
