@@ -1,5 +1,5 @@
 /Dapp store products 
-
+// the code of the channel try it to updgrade with EVM tools
 
 contract Store {
 	enum OrderStatus { New, Pending, Shipped, Cancelled, Refunded, Complete , Offer , NO Shipped , Refund }
