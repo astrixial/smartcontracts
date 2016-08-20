@@ -68,17 +68,17 @@ contract PredictionMarket is Owned, Administrated {
     event Debug(string message, address msgSender, uint aValue);
 
     struct Bet {
-        uint yes;
-        uint no;
+        uint yea; // yes is the original works better on yes
+        uint nay;
         bool paidOut;
     }
     
     struct YesNoQuestion {
         string question; //should be a byte32 shortname for gas efficiency
-        uint totalYes;
-        uint totalNo;
+        uint totalYea;
+        uint totalNay;
         bool open;
-        bool result; //true == yes, false == no
+        bool result; //true == yea, false == nay
         uint closingDate;
         uint closingBalance;
         address trustedSource;
@@ -94,7 +94,7 @@ contract PredictionMarket is Owned, Administrated {
     ,address trustedSource
     ,uint closingDate
     ) private {
-        poll = YesNoQuestion({
+        poll = YeaNayQuestion({
             question:question,
             totalYes: 0,
             totalNo: 0,
